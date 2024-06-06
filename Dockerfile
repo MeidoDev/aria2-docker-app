@@ -1,4 +1,4 @@
-FROM --platform=$TARGETPLATFORM alpine:latest
+FROM alpine:latest
 
 MAINTAINER MeidoDev <MeidoDev@users.noreply.github.com>
 
