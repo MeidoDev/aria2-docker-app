@@ -8,9 +8,9 @@ ADD init.sh /init.sh
 RUN apk update \
     && apk add --no-cache --update aria2 nginx \
     && mkdir -p /downloads /aria-ng /aria-run \
-    && wget https://github.com/mayswind/AriaNg/releases/download/1.3.10/AriaNg-1.3.10.zip \
-    && unzip AriaNg-1.3.10.zip -d aria-ng \
-    && rm AriaNg-1.3.10.zip \
+    && wget https://github.com/mayswind/AriaNg/releases/download/1.3.10/AriaNg-1.3.13.zip \
+    && unzip AriaNg-1.3.13.zip -d aria-ng \
+    && rm AriaNg-1.3.13.zip \
     && chmod +x init.sh
 
 ENV UPLOAD_LIMIT="1M"
